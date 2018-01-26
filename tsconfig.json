@@ -16,7 +16,7 @@
     ],
     "baseUrl": ".",
     "paths": {
-      "material2-extensions-lib": ["libs/material2-extensions-lib"]
+      "material2-extensions": ["libs/material2-extensions"]
     }
   },
   "exclude": [

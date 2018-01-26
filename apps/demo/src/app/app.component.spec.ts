@@ -1,7 +1,7 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { AppComponent } from './app.component';
-import { MatChipInputModule } from 'material2-extensions-lib';
+import { MatChipInputModule } from 'material2-extensions';
 
 describe('AppComponent', () => {
   let component: AppComponent;

@@ -2,7 +2,7 @@
   "extends": "./tsconfig.json",
   "compilerOptions": {
     "paths": {
-      "material2-extensions-lib": ["material2-extensions-lib"]
+      "material2-extensions": ["material2-extensions"]
     }
   }
 }

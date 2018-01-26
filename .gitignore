@@ -4,8 +4,7 @@
 /dist
 /tmp
 /out-tsc
-/ngx-tabs-lib
-/material2-extensions-lib
+/material2-extensions
 
 # dependencies
 /node_modules

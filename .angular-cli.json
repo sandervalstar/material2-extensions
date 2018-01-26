@@ -96,8 +96,8 @@
       }
     },
     {
-      "name": "material2-extensions-lib",
-      "root": "libs/material2-extensions-lib/src",
+      "name": "material2-extensions",
+      "root": "libs/material2-extensions/src",
       "test": "../../../test.js",
       "appRoot": "",
       "prefix": "mat"
