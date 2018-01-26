@@ -16,7 +16,6 @@
     ],
     "baseUrl": ".",
     "paths": {
-      "ngx-tabs-lib": ["libs/ngx-tabs-lib"],
       "material2-extensions-lib": ["libs/material2-extensions-lib"]
     }
   },

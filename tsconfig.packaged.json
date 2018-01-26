@@ -2,7 +2,6 @@
   "extends": "./tsconfig.json",
   "compilerOptions": {
     "paths": {
-      "ngx-tabs-lib": ["ngx-tabs-lib"],
       "material2-extensions-lib": ["material2-extensions-lib"]
     }
   }
