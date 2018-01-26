@@ -71,6 +71,13 @@ export class ChipInputComponent implements OnInit {
     }
   }
 
+  chooseFirstOption(event: KeyboardEvent): void {
+    if (event.key === "ArrowDown" || event.key === "ArrowUp") {
+      return;
+    }
+    this.matAutocomplete._keyManager.setFirstItemActive();
+  }
+
   filter(val: string): string[] {
     return this.options.filter(option => {
       if (this.inputValue === '') return false;
@@ -80,13 +87,6 @@ export class ChipInputComponent implements OnInit {
         return true;
       }
     });
-  }
-
-  chooseFirstOption(event: KeyboardEvent): void {
-    if (event.key === "ArrowDown" || event.key === "ArrowUp") {
-      return;
-    }
-    this.matAutocomplete._keyManager.setFirstItemActive();
   }
 
   ngOnInit(): void {
