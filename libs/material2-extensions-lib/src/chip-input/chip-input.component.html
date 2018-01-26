@@ -12,6 +12,7 @@
            (matChipInputTokenEnd)="add($event)"
            [formControl]="myControl" [matAutocomplete]="auto"
            [(ngModel)]="inputValue"
+           (keyup)="chooseFirstOption($event)"
     >
     <mat-autocomplete #auto="matAutocomplete">
       <mat-option *ngFor="let option of filteredOptions | async" [value]="option">

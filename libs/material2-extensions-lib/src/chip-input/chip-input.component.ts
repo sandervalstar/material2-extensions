@@ -1,7 +1,7 @@
-import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
+import { Component, EventEmitter, Input, OnInit, Output, ViewChild } from '@angular/core';
 import { FormControl } from '@angular/forms';
 import { Observable } from 'rxjs/Observable';
-import { MatChipInputEvent } from '@angular/material';
+import { MatAutocomplete, MatChipInputEvent } from '@angular/material';
 import { COMMA, ENTER } from '@angular/cdk/keycodes';
 import { map, startWith } from 'rxjs/operators';
 
@@ -38,13 +38,20 @@ export class ChipInputComponent implements OnInit {
 
   myControl: FormControl = new FormControl();
 
+  @ViewChild(MatAutocomplete) matAutocomplete: MatAutocomplete;
+
   add(event: MatChipInputEvent): void {
-    if (this.inputValue.length === 0 || this.options.indexOf(this.inputValue) < 0 || this.chips.indexOf(this.inputValue) >= 0) {
+    if (this.inputValue.length === 0 || this.options.indexOf(this.inputValue) < 0) {
       if (this.inputValue.length > 0) {
-        console.log('erer', this.inputValue);
+        console.log('error, not an option', this.inputValue);
         this.onIllegalInput.emit('You can only add items from the list');
       }
-    } else {
+    }
+    // else if (this.chips.indexOf(this.inputValue) >= 0) {
+    //   console.log('error, already selected', this.inputValue);
+    //   this.onIllegalInput.emit('You can only select values once');
+    // }
+    else {
       // Add our chip
       this.chips.push(this.inputValue.trim());
       this.onValueChange.emit(this.chips);
@@ -73,6 +80,13 @@ export class ChipInputComponent implements OnInit {
         return true;
       }
     });
+  }
+
+  chooseFirstOption(event: KeyboardEvent): void {
+    if (event.key === "ArrowDown" || event.key === "ArrowUp") {
+      return;
+    }
+    this.matAutocomplete._keyManager.setFirstItemActive();
   }
 
   ngOnInit(): void {
