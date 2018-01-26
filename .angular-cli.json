@@ -100,6 +100,13 @@
       "root": "libs/ngx-tabs-lib/src",
       "test": "../../../test.js",
       "appRoot": ""
+    },
+    {
+      "name": "material2-extensions-lib",
+      "root": "libs/material2-extensions-lib/src",
+      "test": "../../../test.js",
+      "appRoot": "",
+      "prefix": "mat"
     }
   ]
 }
