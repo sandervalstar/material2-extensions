@@ -19,7 +19,6 @@ before_deploy:
   - pwd
   - npm run build:lib
   - cd material2-extensions
-  - npm deploy
 
 deploy:
   provider: npm
