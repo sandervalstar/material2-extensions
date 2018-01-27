@@ -1,0 +1,27 @@
+language: node_js
+node_js:
+  - "8.5.0"
+
+cache:
+  directories:
+    - node_modules
+    - $HOME/.npm
+
+install:
+  - pwd
+  - npm install
+
+test:
+  - pwd
+  - npm test
+
+before_deploy:
+  - pwd
+  - npm run build:lib
+  - cd material2-extensions
+  - npm deploy
+
+deploy:
+  provider: npm
+  email: $EMAIL_ADDRESS
+  api_key: $AUTH_TOKEN
