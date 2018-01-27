@@ -1,8 +1,8 @@
 {
   "$schema": "./node_modules/@nrwl/schematics/src/schema.json",
   "project": {
-    "name": "angular-cli-lib-example",
-    "npmScope": "angular-cli-lib-example",
+    "name": "material2-extensions-lib",
+    "npmScope": "material2-extensions-lib",
     "latestMigration": "20180120-update-prettier"
   },
   "e2e": {

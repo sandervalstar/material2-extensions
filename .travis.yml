@@ -13,7 +13,7 @@ install:
 
 test:
   - pwd
-  - npm test
+  - npm test -- --single-run
 
 before_deploy:
   - pwd
