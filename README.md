@@ -1,14 +1,16 @@
 # Angular Material 2 Extensions
-https://www.npmjs.com/package/material2-extensions
+[npm-package](https://www.npmjs.com/package/material2-extensions)
+
+[github](https://github.com/sandervalstar/material2-extensions)
 
 This is a component library containing the following custom extensions to Angular Material 2:
 
-* [Chip-input with auto-complete](https://github.com/sandervalstar/material2-extensions#chip-input)
+* [Chip-input with auto-complete](#chip-input)
 
 
 ## How to use
 ### Chip-input
-![alt text](https://github.com/sandervalstar/material2-extensions/blob/master/images/chip-input.png "Chip Input")
+![](https://raw.githubusercontent.com/sandervalstar/material2-extensions/master/images/chip-input.png "Chip Input")
 ```angular2html
 <mat-chip-input [options]="['option 1', 'option 2', 'option 3']"></mat-chip-input>
 ```
