@@ -7,7 +7,8 @@ import { Component, OnInit } from '@angular/core';
 })
 export class AppComponent implements OnInit {
 
-  public options: string[] = ['Een', 'Een', 'Een', 'Twee', 'Drie'];
+  public options: string[] = ['Eerste', 'Een', 'Eentje', 'Twee', 'Drie', 'Vier'];
+  chips = ['Dinges'];
 
   constructor() {
   }

@@ -3,7 +3,6 @@
   "name": "material2-extensions",
   "version": "0.0.1",
   "license": "MIT",
-  "private": true,
   "peerDependencies": {
     "@angular/animations": "^5.1.0",
     "@angular/cdk": "^5.0.1",

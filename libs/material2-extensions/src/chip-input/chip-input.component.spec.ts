@@ -62,4 +62,28 @@ describe('ChipInputComponent', () => {
     });
     component.myControl.setValue(input);
   });
+
+  it('should be able to change options', () => {
+
+    const input = 'b';
+    let iter = 0;
+    component.filteredOptions.subscribe(fopts => {
+      if (iter === 0) {
+        expect(fopts.length).toBe(0);
+        iter++;
+      } else if (iter === 1) {
+        expect(fopts).toContain('banaan');
+        expect(fopts).toContain('bes');
+        expect(fopts.length).toBe(2);
+        component.options = ['bloemkool', 'spruitjes', 'boerenkool', 'rode bieten', 'spitskool'];
+        iter++;
+      } else if (iter === 2) {
+        expect(fopts).toContain('bloemkool');
+        expect(fopts).toContain('boerenkool');
+        expect(fopts.length).toBe(2);
+      }
+    });
+    component.myControl.setValue(input);
+    component.myControl.setValue(input);
+  });
 });
