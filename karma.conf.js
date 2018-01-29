@@ -42,6 +42,6 @@ module.exports = function (config) {
   });
 
   if (process.env.TRAVIS) {
-    cfg.browsers = ['Chrome_travis_ci'];
+    config.browsers = ['Chrome_travis_ci'];
   }
 };
