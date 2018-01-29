@@ -17,7 +17,7 @@ This is a component library containing the following custom extensions to Angula
 
 | Inputs          | Type           | Description                                    | Required |
 |-----------------|----------------|------------------------------------------------|----------|
-| options         | Array\<string> |                                                | yes      |
+| options         | Array\<string> | the list of auto-complete options              | yes      |
 | placeholder     | string         | placeholder text in input field                | no       |
 | chips           | Array\<string> | preselected chips                              | no       |
 | isOptionsFilter | boolean        | filter the options as you type, default = true | no       |

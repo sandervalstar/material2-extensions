@@ -1,12 +1,6 @@
-sudo: required
-addons:
-    chrome: stable
 language: node_js
 node_js:
   - "8.5.0"
-before_script:
-    - "sudo chown root /opt/google/chrome/chrome-sandbox"
-    - "sudo chmod 4755 /opt/google/chrome/chrome-sandbox"
 
 cache:
   directories:
