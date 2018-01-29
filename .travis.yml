@@ -16,7 +16,7 @@ install:
   - pwd
   - npm install
 
-test:
+script:
   - pwd
   - npm test:ci
 
