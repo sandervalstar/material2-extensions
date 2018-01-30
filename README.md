@@ -11,7 +11,7 @@ This is a component library containing the following custom extensions to Angula
 ## How to use
 ### Chip-input
 ![](https://raw.githubusercontent.com/sandervalstar/material2-extensions/master/images/chip-input.png "Chip Input")
-```angular2html
+```html
 <mat-chip-input [options]="['option 1', 'option 2', 'option 3']"></mat-chip-input>
 ```
 

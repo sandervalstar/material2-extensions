@@ -18,11 +18,11 @@ install:
 
 script:
   - pwd
+  - npm run build:lib
   - npm test -- --single-run
 
 before_deploy:
   - pwd
-  - npm run build:lib
   - cd material2-extensions
 
 deploy:
@@ -30,3 +30,8 @@ deploy:
   email: $EMAIL_ADDRESS
   api_key: $AUTH_TOKEN
   skip_cleanup: true
+
+after_deploy:
+  - export GIT_TAG=v$(npm run version --silent)
+  - git tag -a $GIT_TAG -m "Generated tag from TravisCI build $TRAVIS_BUILD_NUMBER"
+  - git push --quiet https://$GITHUB_KEY@github.com/sandervalstar/material2-extensions $GIT_TAG > /dev/null 2>&1
