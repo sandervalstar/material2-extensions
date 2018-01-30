@@ -18,7 +18,7 @@ install:
 
 script:
   - pwd
-  - npm test:ci
+  - npm test -- --single-run
 
 before_deploy:
   - pwd
