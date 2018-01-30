@@ -1,9 +1,13 @@
 {
   "$schema": "../../node_modules/ng-packagr/package.schema.json",
   "name": "material2-extensions",
-  "version": "0.0.7",
+  "version": "0.0.8",
   "license": "MIT",
   "keywords": ["chip-input", "tag-input", "chips", "tags", "input", "material", "angular", "ng2", "ngx"],
+  "repository": {
+    "type" : "git",
+    "url" : "https://github.com/sandervalstar/material2-extensions.git"
+  },
   "peerDependencies": {
     "@angular/animations": "^5.1.0",
     "@angular/cdk": "^5.0.1",
