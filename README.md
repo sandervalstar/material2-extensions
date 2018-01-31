@@ -1,12 +1,12 @@
 # Angular Material 2 Extensions
-[![Build Status](https://api.travis-ci.org/sandervalstar/material2-extensions.png)](https://travis-ci.org/sandervalstar/material2-extensions)
 
-[![https://nodei.co/npm/material2-extensions.png?downloads=true&downloadRank=true&stars=true](https://nodei.co/npm/material2-extensions.png?downloads=true&downloadRank=true&stars=true)](https://www.npmjs.com/package/material2-extensions)
-
-This is a component library containing the following custom extensions to Angular Material 2:
+A component library of custom extensions to Angular Material 2.
 
 * [Chip-input with auto-complete](#chip-input)
 
+[![Build Status](https://api.travis-ci.org/sandervalstar/material2-extensions.png)](https://travis-ci.org/sandervalstar/material2-extensions)
+
+[![https://nodei.co/npm/material2-extensions.png?downloads=true&downloadRank=true&stars=true](https://nodei.co/npm/material2-extensions.png?downloads=true&downloadRank=true&stars=true)](https://www.npmjs.com/package/material2-extensions)
 
 ## How to use
 ### Chip-input
