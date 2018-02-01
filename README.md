@@ -1,5 +1,7 @@
 # Angular Material 2 Extensions
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/sandervalstar/material2-extensions.svg)](https://greenkeeper.io/)
+
 A component library of custom extensions to Angular Material 2.
 
 * [Chip-input with auto-complete](#chip-input)
