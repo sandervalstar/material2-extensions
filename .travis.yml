@@ -15,6 +15,7 @@ before_install:
 
 install:
   - pwd
+  - npm install -g npm #Should be removed after Travis updates default npm version
   - npm ci
 
 script:
