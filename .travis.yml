@@ -1,6 +1,6 @@
 language: node_js
 node_js:
-  - "8.5.0"
+  - "node"
 if: tag IS blank
 
 cache:
@@ -15,7 +15,8 @@ before_install:
 
 install:
   - pwd
-  - npm install
+  - npm install -g npm #Should be removed after Travis updates default npm version
+  - npm ci
 
 script:
   - pwd
